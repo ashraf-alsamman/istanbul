@@ -211,7 +211,6 @@ handleTagChange  (e)
     
     if (this.state.nameV && this.state.emailV && this.state.phoneV)
     {
-        $('.selectpicker').selectpicker('refresh');
 
         
         
@@ -267,7 +266,8 @@ BackStep1  (event) {
 }
 
     render() {
-        
+        $('.selectpicker').selectpicker('refresh');
+
         let testyanas=null;
   
  

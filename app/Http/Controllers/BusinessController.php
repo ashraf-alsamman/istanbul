@@ -52,7 +52,7 @@ class BusinessController extends Controller
         $Business->email = $request->email ;
         $Business->phone = $request->phone ;
         $Business->category_id = $request->category ;
-        $Business->user_id = Auth::user()->id; 
+        $Business->user_id = 1; 
         if($Business->save()) 
         {
         

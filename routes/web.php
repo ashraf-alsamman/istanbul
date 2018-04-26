@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/uploadPhoto','BusinessController@uploadPhoto')->name('uploadPhoto')->middleware('auth');
+Route::post('/uploadPhoto','BusinessController@uploadPhoto')->name('uploadPhoto') ;
 Route::get('/business/add','BusinessController@add')->name('add');
 
 Route::get('/getCategories','BusinessController@getCategories')->name('getCategories');
